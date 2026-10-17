@@ -1,0 +1,32 @@
+{
+  "name": "bettermic",
+  "version": "1.0.0",
+  "description": "A clean microphone processor",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node gate.test.js",
+    "dist": "electron-builder --win portable"
+  },
+  "build": {
+    "appId": "app.bettermic",
+    "productName": "bettermic",
+    "files": [
+      "main.js",
+      "index.html",
+      "gate-worklet.js",
+      "icon.png"
+    ],
+    "win": {
+      "icon": "icon.png",
+      "artifactName": "bettermic.exe"
+    }
+  },
+  "devDependencies": {
+    "electron": "^38.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "allowScripts": {
+    "electron@38.8.6": true
+  }
+}
