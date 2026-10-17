@@ -1,6 +1,6 @@
-// Run: node gate.test.js
+// Run: npm test
 const assert = require('assert');
-const { Gate } = require('./gate-worklet.js');
+const { Gate } = require('../src/gate-worklet.js');
 
 const sr = 48000;
 const block = (amp, n = 4800) => Float32Array.from({ length: n }, (_, i) => amp * Math.sin(i / 10));

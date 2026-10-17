@@ -13,7 +13,7 @@ app.whenReady().then(() => {
     title: 'bettermic',
     icon: path.join(__dirname, 'icon.png'),
   });
-  win.loadFile('index.html');
+  win.loadFile(path.join(__dirname, 'index.html'));
 });
 
 app.on('window-all-closed', () => app.quit());

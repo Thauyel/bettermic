@@ -1,4 +1,4 @@
-<p align="center"><img src="icon.png" width="96" alt=""></p>
+<p align="center"><img src="src/icon.png" width="96" alt=""></p>
 
 <h1 align="center">bettermic</h1>
 
@@ -39,7 +39,7 @@ mic → noise suppression / echo cancellation / auto gain
     → high-pass (80 Hz) → voice gate → compressor → volume → limiter → output
 ```
 
-The first stage is Chromium's built-in WebRTC audio processing. The rest is Web Audio, plus a small AudioWorklet for the gate ([gate-worklet.js](gate-worklet.js)). It's packaged with Electron.
+The first stage is Chromium's built-in WebRTC audio processing. The rest is Web Audio, plus a small AudioWorklet for the gate ([src/gate-worklet.js](src/gate-worklet.js)). It's packaged with Electron.
 
 ## Build from source
 
